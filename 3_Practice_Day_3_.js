@@ -204,3 +204,20 @@ console.log(`Hello
                  console.log(`Hello ${name}`);
 
 //Note : Template literals = modern way to write strings using backticks + ${} for dynamic values 🔥
+
+
+
+// Operators In JS
+// 1- Arithmetic : (+ , - , * , / , % , **)
+// 2- Unary      : (++, --)
+// 3- Assignment : (= , += , -= , *= , /= , %= , **=)
+// 4- Comparison : (== , === , != , !== , > , < , >= , <=)
+// 5- Logical    : (&& , || , !)
+// 6. Ternary Operator:(condition ? true : false)
+// 8. Bitwise Operators: (& , | , ^ , ~ , << , >>);
+// 9. String Operator  :+ (concatenation)
+// 10. Nullish Coalescing : ??
+
+// 11. Optional Chaining   (?.)
+// 12. Spread / Rest:    (...)
+
