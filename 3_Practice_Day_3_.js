@@ -268,3 +268,115 @@ console.log(`Hello
 // <• false
  
 
+
+// Conditional Statements:
+//    1- if-else
+//    2- nested if-else
+//    3- switch
+//       Jaise instgram me Agr Accoubt ptivate hai tab ap uske follower phots nahi dekh pate hai but if wo hame allow kar deta hai to dekh pate hai That is Is The Condition Base problem 
+
+
+// if Statement
+
+// some code before if
+let A=10;
+if (/*some condition*/A==10) {
+//  DO SOMETHING
+    console.log("HII");
+}
+// some code after if
+
+console.log("before my if statement");
+let age1 = 23;
+if (age1 >= 18) {
+    console.log("you can vote");
+}
+if (age1< 18) {
+    console.log("you cannot vote");
+}
+else{
+    console.log("after my if statement");
+}
+
+
+// else if Statement
+
+if (condition-1) {
+
+    // DO SOMETHING
+
+}
+else if (condition-2) {
+
+// DO SOMETHING ELSE
+
+}
+
+else if (condition-3) {
+
+// DO SOMETHING ELSE
+
+}
+
+
+
+
+// Nested if-else:
+
+// Nesting is writing if-else inside if-else statements. It can have many levels.
+//   if marks >= 33
+//     if marks >= 80
+//        print "0"
+//   else
+//       print "A"
+//   else
+//        print "better luck next time!"
+
+
+
+
+
+// Logical Operators : Logical Operators to combine expressions
+ 
+// &&   : Logical AND
+
+// (exp1) && (exp2)  : Agr Dono true hui to hi value ayegi other wise nahi ayegi done 
+
+// > true && true
+//    <true
+
+// > true && false
+//    <false
+
+// > false && true
+//    <false
+
+// > false && false
+//    <false
+
+
+
+// ||   : Logical OR  : // (exp1) || (exp2)  : Agr Dono me se ek bhi true hui to  value Aa jayegi matlb return kar dete hai 
+
+// > true || true
+//    <True
+
+// > true || false
+//    <True
+
+// > false || true
+//    <True
+
+// > false || false
+//    <False
+
+
+
+// ||   : Logical NOT  : // !(exp1)    : Matlb Sahi hai TO galt kar do galt hai to sahi kar do 
+
+// > !true
+//    <False
+
+// > !Flase
+//    <True
+
