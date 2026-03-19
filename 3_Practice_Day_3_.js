@@ -380,3 +380,57 @@ else if (condition-3) {
 // > !Flase
 //    <True
 
+
+
+
+
+// Concept Of Truly and Falsy
+// 🔥 Truthy & Falsy in JavaScript
+
+// 👉 In JavaScript, every value can be converted into true or false
+// 👉 This concept is called truthy and falsy
+
+
+// 🔴 Falsy Values (always treated as false)
+
+// false
+// 0
+// "" (empty string)
+// null
+// undefined
+// NaN
+
+if (0) {
+  console.log("Run"); // ❌ will NOT execute
+}
+
+// 🟢 Truthy Values (treated as true)
+
+// 👉 Almost everything else is truthy:
+
+// "hello"
+// 1, 100
+// [] (empty array)
+// {} (empty object)
+
+if ("hello") {
+  console.log("Run"); // ✅ will execute
+}
+
+//Real Use Example
+let name1 = "";
+
+if (name1) {
+  console.log("Name exists");
+} else {
+  console.log("Name is empty");
+}
+
+
+// 🔥 Simple Understanding
+
+// Falsy = behaves like false
+// Truthy = behaves like true
+
+// 👉 One line:
+// JavaScript automatically converts values into true/false inside conditions 
