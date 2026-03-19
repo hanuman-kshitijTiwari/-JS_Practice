@@ -70,26 +70,26 @@ console.log("Code end hua");
 
 //Different types of console methods in JavaScript
 
-//1:   Basic Output 🟢:
-//     console.log() → prints normal messages
-//     console.info() → informational message (similar to log)
+//1:🟢  Basic Output:
+//       console.log() → prints normal messages
+//       console.info() → informational message (similar to log)
 
 
-//2:    Warning & Error:🟡 
-//      console.warn() → shows warning (yellow)
-//      console.error() → shows error (red 🚨)
+//2:🟡  Warning & Error: 
+//       console.warn() → shows warning (yellow)
+//       console.error() → shows error (red 🚨)
 
-//3- 🔵 Debugging
-//      console.debug() → debug-level messages
-//      console.trace() → shows function call stack
+//3-🔵  Debugging
+//       console.debug() → debug-level messages
+//       console.trace() → shows function call stack
 
 
 // 🟣   Table & Structure
-//      console.table() → displays data in table format
+//       console.table() → displays data in table format
 
 // 🟠   Grouping Logs
-//      console.group() → groups logs together
-//      console.groupEnd() → ends the group
+//       console.group() → groups logs together
+//       console.groupEnd() → ends the group
 
 
 // ⏱️ Time Measurement
@@ -149,3 +149,28 @@ console.log("Code end hua");
 // warn
 // table
 // time
+
+
+
+
+
+// From Here We Can UnderStant About How We can Link Js With Our Html
+
+
+//1. Using <script> tag inside HTML
+<script>
+  console.log("JS connected");
+</script>
+
+//2. Linking external JS file (most common ✅)
+//   <script src="script.js"></script>           👉 Your JS code will be in script.js
+
+//3.   Where to place <script> tag
+//     Inside <head> (not recommended)
+//     Before closing </body> (best practice ✅)
+
+//<body>
+//  <h1>Hello</h1>
+//
+//  <script src="script.js"></script>
+//</body>
