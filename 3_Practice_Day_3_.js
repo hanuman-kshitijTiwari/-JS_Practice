@@ -182,9 +182,9 @@ console.log("Code end hua");
 //🟢 Basic Syntax:
         let name = "Kshitij";
         console.log(`Hello ${name}`); 
-// output: Hello kshitij
+//   output: Hello kshitij
 
-// 🔥 Why use Template Literals?
+//🔥  Why use Template Literals?
 
 // 1. Variable directly use kar sakte ho
 
@@ -207,7 +207,7 @@ console.log(`Hello
 
 
 
-// Operators In JS
+//    Operators In JS
 // 1- Arithmetic : (+ , - , * , / , % , **)
 // 2- Unary      : (++, --)
 // 3- Assignment : (= , += , -= , *= , /= , %= , **=)
@@ -220,4 +220,51 @@ console.log(`Hello
 
 // 11. Optional Chaining   (?.)
 // 12. Spread / Rest:    (...)
+
+// Comparison Operators:Comparison Operators to compare 2 values
+
+// Comparison Operators:Comparison Operators to compare 2 values
+
+// 1.  >   : Greater then Opraetor
+// 2.  >=  : Greater Then Or Equal to
+// 3.  <   : Lesser then
+// 4.  <=  : Lesserer than  or Equal To 
+// 5.  ==  : Equal To Equal 
+// 6.  !=  : Not_Equal TO 
+
+// Comparison Operators:
+
+// == ye value compaire karta hai 
+// compares value, not type
+
+// > "123" == 123
+// <• true
+
+// > 1 == '1'
+// <• true
+
+// > 0 == ' '
+// <• true
+
+// > 0 == false
+// <• true
+
+// > null == undefined
+// <• true
+
+
+// === ye value aur type dono ko comaire karta hai 
+// compares type & value
+// > "123" 123
+// <• false
+
+// > 1==='1'
+// <• false
+
+// > 0 == ''
+// <• false
+
+// > 0=== false
+// <• false
+ 
 
