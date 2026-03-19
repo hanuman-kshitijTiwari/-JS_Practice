@@ -174,3 +174,33 @@ console.log("Code end hua");
 //
 //  <script src="script.js"></script>
 //</body>
+
+
+// Template Literals (JavaScript)
+// Template literals are a way to write strings using backticks ( ) instead of quotes.
+
+//🟢 Basic Syntax:
+        let name = "Kshitij";
+        console.log(`Hello ${name}`); 
+// output: Hello kshitij
+
+// 🔥 Why use Template Literals?
+
+// 1. Variable directly use kar sakte ho
+
+let age = 20;
+console.log(`Age is ${age}`);
+
+
+// 2. Expressions use kar sakte ho
+
+console.log(`Sum is ${10 + 5}`);
+
+// 3. Multi-line string likh sakte ho
+
+console.log(`Hello 
+             World`); 
+             // ✅ New way (clean & easy)
+                 console.log(`Hello ${name}`);
+
+//Note : Template literals = modern way to write strings using backticks + ${} for dynamic values 🔥
