@@ -80,3 +80,6 @@ console.log(text.trim()); // Hello
 // slice → cut
 // replace → change
 // trim → clean
+
+
+
