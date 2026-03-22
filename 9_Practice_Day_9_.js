@@ -76,3 +76,82 @@ let arr = [1, 2, 3, 4, 5];
 console.log(arr.slice(1, 3)); // [2, 3]
 //👉 Same concept applies
 
+
+//🔤 1. String Methods (Most Important)
+
+
+//1- Extract / Slice Type
+    slice()
+    substring()
+    substr()     //(⚠️ old / deprecated)
+
+
+//2-Search / Check
+    includes()
+    indexOf()
+    lastIndexOf()
+    startsWith()
+    endsWith()
+
+//3- Modify / Replace
+    replace()
+    replaceAll()
+    toUpperCase()
+    toLowerCase()
+    trim()
+    trimStart()
+    trimEnd()
+
+//4- Combine / Split
+//   concat()
+//   split()
+
+
+//5- 📏 Other Useful
+
+    length //(property, not method)
+    charAt()
+    charCodeAt()
+    repeat()
+
+
+ //📦 2. Array Methods (VERY IMPORTANT 🔥)
+
+//1- Slice / Modify
+    slice()
+    splice()
+
+//2- Add / Remove
+    push()
+    pop()
+    shift()
+    unshift()    
+
+//3- 🔁 Loop / Transform
+    map()
+    forEach()
+    filter()
+    reduce()
+
+//4- Search
+    find()
+    findIndex()
+    includes()
+    indexOf()
+
+//5-Convert / Join
+    join()
+    toString()
+
+
+//⚙️ 3.Important General (Objects / Others)
+        Object.keys()
+        Object.values()
+        Object.entries()
+
+
+// Strings → ~15–20 important
+// Arrays → ~20–25 important     
+        
+
+
