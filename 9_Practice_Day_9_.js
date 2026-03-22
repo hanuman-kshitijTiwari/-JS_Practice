@@ -171,3 +171,10 @@ console.log(arr.slice(1, 3)); // [2, 3]
     forEach()
     indexOf()
     replace()
+
+
+
+
+
+
+    
