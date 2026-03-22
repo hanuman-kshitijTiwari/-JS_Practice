@@ -155,3 +155,19 @@ console.log(arr.slice(1, 3)); // [2, 3]
         
 
 
+//🥇MUST KNOW (Top Priority)
+    slice()
+    map()
+    filter()
+    reduce()
+    find()
+    includes()
+    split()
+    trim()
+
+
+//🥈 SECOND LEVEL
+    splice()
+    forEach()
+    indexOf()
+    replace()
