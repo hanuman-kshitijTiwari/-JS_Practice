@@ -52,3 +52,16 @@ console.log(arr);
 // [1, 9, 8, 4]
 
 // Final Answer  [1, 9, 8, 4]
+
+// THis is Our Splice methode end Here 
+
+
+
+// Reall Life Example 
+// To Do List (Most Common);
+let todos = ["Studys", "Gym", "Code", "Sleep"];
+let index = todos.indexOf("code");
+if(index !== -1){
+    todos.splice(index,1);
+} 
+console.log(todos);   // ["Study", "Gym", "Sleep"]
