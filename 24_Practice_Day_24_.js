@@ -29,3 +29,33 @@ do{
     k++;
 }
 while(k<str.length);
+
+
+
+//🔹 for...of Loop in JavaScript
+
+// ➤ Definition
+// The for...of loop is used to iterate over values of iterable data (arrays, strings, etc.)
+
+//1- Basic Example 
+let arr1 = [10,20,30];
+for(let value of arr){
+    console.log(value);
+}
+
+
+//3. with String
+let str2 = "hello";
+
+for (let char of str2) {
+  console.log(char);
+}
+
+// 🔹 Key Points
+// Directly gives values, not index
+// Works with arrays, strings, iterable objects
+// Cleaner than traditional for loop
+// No need to use .length
+
+//➤ One-line Summary
+//   “for...of loop is used to directly access values from arrays and strings.”
