@@ -21,14 +21,11 @@ console.log(Math); // karke sab dekh lo
 //## 🔹 Properties (Constants)
 
 //### 1. PI
-//Represents the ratio of a circle's circumference to its diameter.
+//       Represents the ratio of a circle's circumference to its diameter.
   Math.PI; // 3.141592653589793
 
-
-
-
 //### 2. E
-//Represents Euler's number, used in exponential and logarithmic calculations.
+//       Represents Euler's number, used in exponential and logarithmic calculations.
   Math.E; // 2.718281828459045
 
 
