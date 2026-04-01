@@ -1,0 +1,160 @@
+/* Basic reset for consistent styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Modern premium gradient background */
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); 
+  font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+  padding: 20px;
+}
+
+.otp-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 480px; /* Limits max width for large screens */
+}
+
+/* Header Section inside Card */
+.card-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.otp-icon {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #eff6ff; /* Soft blue background for icon */
+  border-radius: 50%;
+}
+
+.card-header h1 {
+  color: #111827;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-header .subtitle {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* OTP Input Container */
+.otp-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.otp-input {
+  width: 48px;
+  height: 56px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.otp-input::placeholder {
+  color: #d1d5db;
+}
+
+/* Input Focus States */
+.otp-input:focus {
+  border-color: #3b82f6; 
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+/* Primary Button */
+#verify-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+}
+
+#verify-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 8px -1px rgba(59, 130, 246, 0.4);
+}
+
+#verify-btn:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+/* Resend Link Text */
+.resend-text {
+  margin-top: 24px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.resend-link {
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.resend-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Status Message */
+#massage {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ef4444;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 480px) {
+  .otp-card {
+    padding: 30px 20px;
+  }
+  
+  .otp-container {
+    gap: 8px;
+  }
+  
+  .otp-input {
+    width: 40px;
+    height: 48px;
+    font-size: 20px;
+  }
+}

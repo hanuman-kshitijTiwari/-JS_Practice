@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification Flow</title>
+    <!-- Importing Inter font for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="37_3_Practice_Day_37_3_.css">
+    <style>
+      .primary-btn {
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #3b82f6;
+        color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+      }
+
+      .primary-btn:hover {
+        background-color: #2563eb;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 8px -1px rgba(59, 130, 246, 0.4);
+      }
+
+      .primary-btn:active {
+        transform: translateY(1px);
+        box-shadow: none;
+      }
+      
+      .primary-btn:disabled {
+        background-color: #94a3b8;
+        cursor: not-allowed;
+        box-shadow: none;
+        transform: none;
+      }
+    </style>
+</head>
+<body>
+    <div class="otp-card">
+        <div class="card-header">
+            <!-- Professional lock icon -->
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="otp-icon">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <h1>Verify Your Account</h1>
+            <p class="subtitle" id="subtitle-msg">Enter your email to receive an OTP.</p>
+        </div>
+
+        <!-- Initial Email Entry UI -->
+        <div id="email-section" style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+            <input type="email" id="email-input" class="email-input" placeholder="Enter your email" style="width: 100%; padding: 12px; border-radius: 10px; border: 2px solid #e5e7eb; font-size: 16px; outline: none;">
+            <button id="send-otp-btn" class="primary-btn">Send OTP</button>
+        </div>
+
+        <!-- Hidden until OTP is requested -->
+        <div id="otp-section" style="display: none; width: 100%; flex-direction: column; align-items: center;">
+            <div class="otp-container">
+                <input type="text" maxlength="1" class="otp-input" placeholder="·">
+                <input type="text" maxlength="1" class="otp-input" placeholder="·">
+                <input type="text" maxlength="1" class="otp-input" placeholder="·">
+                <input type="text" maxlength="1" class="otp-input" placeholder="·">
+                <input type="text" maxlength="1" class="otp-input" placeholder="·">
+                <input type="text" maxlength="1" class="otp-input" placeholder="·">
+            </div>
+
+            <button id="verify-btn" class="primary-btn">Verify OTP</button>
+            <p class="resend-text">Didn't receive code? <button id="resend-btn" class="resend-link" style="background:none; border:none; padding:0; cursor:pointer;" disabled>Wait 30s</button></p>
+        </div>
+
+        <!-- Validation / Success Messages -->
+        <p id="message" style="margin-top: 15px; font-weight: 600; font-size: 14px; text-align: center; color: #ef4444; width: 100%; word-break: break-all;"></p>
+    </div>
+
+    <!-- Frontend logic integration -->
+    <script src="37_2_Practice_Day_37_2_.js"></script>
+</body>
+</html>
