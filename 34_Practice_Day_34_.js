@@ -13,3 +13,21 @@
 let otp = Math.floor(100000 + Math.random() * 900000);
 console.log(otp);
 
+
+
+// Genrate Dynamic Otp Not Fixed Size 
+
+function genrateOTP(length){
+    let min = Math.pow(10, length-1);
+    let max = 9 * min;
+
+    return Math.floor(min + Math.random() * max);
+}
+
+// Test 
+console.log(genrateOTP(4)); // 4 Digits
+console.log(genrateOTP(5)); // 5 Digits
+console.log(genrateOTP(2)); // 2 Digits
+console.log(genrateOTP(10)); //10 Digits
+
+
