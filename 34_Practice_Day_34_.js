@@ -51,3 +51,22 @@ let Alpha = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 let Otp = Math.floor(Math.random() * Alpha.length);
 let Value = Alpha[Otp];
 console.log(Value);
+
+
+
+
+// Leadding Zeroes Fixed;
+// let otp3 = 000123;
+// console.log(otp3);  👉 Output aayega  : 123   Q .. < 👉 Kyunki JS number me starting zero hata deta hai > 
+
+
+//🎯 Solution = OTP ko STRING me handle karo
+//🔥 Method 1 (Best & Easy) → padStart()
+     let otp5 = Math.floor(Math.random() * 100000).toString().padStart(6, '0');
+     console.log(otp5);
+// 💡 Ye kya kar raha hai?
+// 👉  Math.random()*1000000 → 0 to 999999
+// 👉 .toString() → string bana diya
+// 👉 .padStart(6, '0') → agar chhota hai to aage 0 laga dega  
+ 
+
