@@ -22,3 +22,23 @@ function generatePassword(length, useUpper, useNumbers, useSymbols) {
 
 // Test
 console.log(generatePassword(12, true, true, true));
+
+
+
+
+
+
+function generatePassword(length) {
+    let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
+    let password = "";
+
+    for (let i = 0; i < length; i++) {
+        let randomIndex = Math.floor(Math.random() * chars.length);
+        password += chars[randomIndex];
+    }
+
+    return password;
+}
+
+// Test
+console.log(generatePassword(10));
