@@ -64,3 +64,54 @@ console.log(result);
 
 // Conclusion
 // Higher Order Functions make code more flexible and reusable. They are widely used in modern JavaScript for writing clean and functional code.    
+
+
+
+// Higher Order Function (Returning Function)
+// A Higher Order Function is a function that can return another function. This allows dynamic behavior based on input.
+
+function oddEvenTest(request) {
+    if (request == "odd") {
+        return function(n) {
+            console.log(!(n % 2 == 0));
+        };
+    } else if (request == "even") {
+        return function(n) {
+            console.log(n % 2 == 0);
+        };
+    } else {
+        console.log("wrong request");
+    }
+}
+
+
+//Usage
+
+const checkOdd = oddEvenTest("odd");
+checkOdd(5); // true
+
+const checkEven = oddEvenTest("even");
+checkEven(4); // true
+
+// Explanation
+// oddEvenTest is a Higher Order Function because it returns a function.
+// Based on the input ("odd" or "even"), it returns different functions.
+// The returned function is then stored in a variable and executed later.
+// This pattern allows creating custom behavior dynamically.
+
+//⚠️ Important Note
+//   If an invalid request is passed:
+
+//  oddEvenTest("random"); // prints "wrong request"
+
+
+// Key Concept
+
+// This is an example of:
+//     Function returning function
+//     Dynamic function creation
+//     Basic use of closures in JavaScript
+
+
+//Conclusion
+//Higher Order Functions that return functions are powerful because they allow flexible and reusable code by generating functions based on conditions.
