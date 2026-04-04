@@ -30,3 +30,30 @@ In the above example:
     The function takes two parameters a and b.
     It returns the sum of the two values.
     The function is executed using the variable name: add(2, 3).```
+
+
+// Function Express Vs Function Declaration 
+
+//1- Function Declaration 
+function sum(a, b){
+    return a+b;
+}
+// Call Your Function Here 
+
+// 2- Function Exppression 
+const multiplction = function(a, b){
+    return a*b;
+}
+// Call Your Function here 
+
+
+// 💡Key Difference
+//    Function Declarations are hoisted (can be called before definition).
+//    Function Expressions are not hoisted (must be defined first).
+
+
+//Conclusion
+//Function Expressions allow us to treat functions as values. This makes JavaScript flexible, as functions can be assigned to variables, passed as arguments, and returned from other functions.
+
+
+~
