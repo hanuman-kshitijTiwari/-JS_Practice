@@ -56,4 +56,3 @@ const multiplction = function(a, b){
 //Function Expressions allow us to treat functions as values. This makes JavaScript flexible, as functions can be assigned to variables, passed as arguments, and returned from other functions.
 
 
-~
