@@ -74,3 +74,85 @@ car.start(); // BMW is starting...
 // A method is just a function inside an object.
 // Methods are called using dot notation: object.method()
 // this helps access properties of the same object.
+
+
+
+
+//🔹 Method Shorthand kya hota hai?
+
+//👉 Jab hum object ke andar function likhte hain bina function keyword ke
+//👉 Usse bolte hain method shorthand
+
+//🔹 Normal (Old Way)
+
+const user3 = {
+    name: "Kshitij",
+    greet: function() {
+        console.log("Hello " + this.name);
+    }
+};
+
+//🔹 Shorthand (Modern Way ✅)
+
+const user4 = {
+    name: "Kshitij",
+    greet() {
+        console.log("Hello " + this.name);
+    }
+};
+
+//👉 Same kaam, bas syntax short aur clean 💯
+
+//🔥Difference samajh le ek line me
+//    Old: greet: function()
+//    Short: greet()
+
+//🔹 Shorthand with Parameters
+const calc = {
+    add(a, b) {
+        return a + b;
+    }
+};
+
+console.log(calc.add(2, 3)); // 5
+
+//🔹 Multiple Methods (Clean Code)
+
+const app = {
+    start() {
+        console.log("App Started");
+    },
+
+    stop() {
+        console.log("App Stopped");
+    }
+};
+
+app.start();
+app.stop();
+
+//🔹 Real-Life Example (GitHub ke liye 🔥)
+const userAccount = {
+    name: "Kshitij",
+    balance: 1000,
+
+    deposit(amount) {
+        this.balance += amount;
+    },
+
+    withdraw(amount) {
+        this.balance -= amount;
+    },
+
+    check() {
+        console.log(this.balance);
+    }
+};
+
+userAccount.deposit(500);
+userAccount.check(); // 1500
+
+// Important Note
+//👉 Shorthand ≠ Arrow Function
+//❌ Galat:  greet: () => {}
+//✔ Sahi : greet() {}
