@@ -91,3 +91,20 @@ console.log(result);
 //         No arguments ❌
 //         Cannot use new ❌
 //         Best for small & callback functions ✅
+
+
+
+
+
+
+// Adding New Example For Arrow Function 
+
+const cube1 = (n) => {
+    return  n*n*n;
+} 
+const cube2 = n => {  // yha hame dekha ki jab ek argument hota hai to pranthises lagna jaruri nahi hota hai 
+    return  n*n*n;  
+} 
+const pow =(a,b) => {
+    return a**b;
+}
