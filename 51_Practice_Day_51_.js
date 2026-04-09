@@ -57,4 +57,17 @@ console.log("Welcome To ABCD");
 
 
 
+//🔹 Named function ke sath
+function greet() {
+    console.log("Hello")
+}
+setTimeout(greet, 2000);
 
+// 🔹 clearTimeout (important 🔥)
+// 👉 Timeout ko cancel karne ke liye
+
+const id = setTimeout(() => {
+    console.log("Hello");
+}, 3000);
+
+clearTimeout(id); // cancel ho gaya
