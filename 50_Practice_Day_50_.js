@@ -16,3 +16,30 @@ const sum = (a,b) => (
 const cube1 = (n) => (
     n*n*n
 )
+
+
+
+// Arrow Function Me Do Tarike Hote hai
+//1️⃣ Normal (Explicit Return)
+const mul1 = (a,b) => {
+    return a*b ;
+}
+// 👉   Yaha:
+//      {} use kiya
+//      return likhna Zaroori Hai 
+
+
+
+//2️⃣ Implicit Return (Tera wala case 💯)
+    const mul2 = (a,b) => (a*b);
+
+// 👉 Yaha kya change hua:
+// {} hata diye ❌
+// () use kiya ✅
+// return automatically ho gaya (likhne ki zaroorat nahi)
+
+
+// 🧠 Rule yaad rakh:
+// 👉 Agar function me sirf ek hi kaam hai (single expression)
+// ➡️ to tu implicit return use kar sakta hai
+
