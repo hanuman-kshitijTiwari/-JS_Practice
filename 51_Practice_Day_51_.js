@@ -71,3 +71,20 @@ const id = setTimeout(() => {
 }, 3000);
 
 clearTimeout(id); // cancel ho gaya
+
+
+// 🔹 Bonus: setInterval (bhai next level 😎)
+//    👉 bar-bar run hota hai
+
+setInterval(() => {
+    console.log("Hello");
+}, 2000);
+
+// 👉 har 2 sec me print karega
+
+
+// 🎯 Short Summary (Exam/Revision ke liye)
+// setTimeout() delay ke baad function run karta hai
+// Time milliseconds me hota hai
+// Ye asynchronous hota hai
+// clearTimeout() se cancel kar sakte hai
