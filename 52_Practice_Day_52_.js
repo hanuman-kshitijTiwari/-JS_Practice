@@ -60,3 +60,22 @@ let timer = setInterval(() => {
 // Ye asynchronous hota hai
 // Exact timing guarantee nahi hoti (browser load pe depend karta hai)
 // Zyada use karoge to performance issue aa sakta hai
+
+
+//🔹 Pro Tip 🚀
+//    Kabhi-kabhi better hota hai setInterval ki jagah setTimeout loop use karo:
+
+function repeat(){
+    console.log("Smart Loop");
+
+    setTimeout(repeat, 1000);
+}
+repeat();
+//👉 Isme tum control better kar sakte ho (no overlap issue)
+
+
+// Exercise :
+// ⏰ Digital clock project
+// 🎯 Countdown timer
+// 🎮 Game loop example
+ // banao 
