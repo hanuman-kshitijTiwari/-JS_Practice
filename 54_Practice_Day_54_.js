@@ -1,5 +1,5 @@
 // Practice Question 
-// Write an arrow function that returns the square of a number 'n'.
+//Q1- Write an arrow function that returns the square of a number 'n'.
 
 
 ```Syntax:
@@ -20,7 +20,7 @@ console.log(square(5));
 // Isliye const, let, ya var use karte hain.
 
 
-// Q 2-  Write a function that prints "Hello World" 5 times at intervals of 2s each.
+//Q2-  Write a function that prints "Hello World" 5 times at intervals of 2s each.
 
 const print = () => {
     console.log("Hello");
