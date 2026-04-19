@@ -18,3 +18,16 @@ function sumArray(arr) {
   return arr.reduce((acc, curr) => acc + curr, 0);
 }
 console.log(sumArray([1,2,3,4])); // 10
+
+
+//✅ 4. Find Maximum Number
+function findMax(arr) {
+  return Math.max(...arr);
+}
+console.log(findMax([10, 5, 20, 8])); // 20
+
+
+//✅ 5. Remove Duplicates
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
